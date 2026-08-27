@@ -12,7 +12,7 @@ from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_sc
 from sklearn.model_selection import GridSearchCV, train_test_split
 
 APP_DIR = Path(__file__).resolve().parent
-DATA_PATH = APP_DIR.parent / "data" / "/Users/ousmanefall/Desktop/Gomycode/python/projet_credit_scoring/data/loan_approval_dataset.csv"
+DATA_PATH = APP_DIR.parent / "data" / "loan_approval_dataset.csv"
 MODEL_DIR = APP_DIR / "models"
 MODEL_PATH = MODEL_DIR / "credit_model.pkl"
 RESULTS_PATH = APP_DIR / "comparaison_modeles.csv"
@@ -26,7 +26,7 @@ FEATURES = [
 ]
 
 
-def prepare_data(path: Path) -> tuple[pd.DataFrame, pd.Series]:
+def prepare_data(path: Path):
     df = pd.read_csv(path)
     df.columns = df.columns.str.strip()
 
