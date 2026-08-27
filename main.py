@@ -10,8 +10,7 @@ import pandas as pd
 import streamlit as st
 
 APP_DIR = Path(__file__).resolve().parent
-MODEL_PATH = APP_DIR / "models" / "/Users/ousmanefall/Desktop/Gomycode/python/projet_credit_scoring/app/models/credit_model.pkl"
-
+MODEL_PATH = APP_DIR / "models" / "credit_model.pkl"
 st.set_page_config(page_title="Risque de crédit", page_icon="🏦", layout="centered")
 
 
